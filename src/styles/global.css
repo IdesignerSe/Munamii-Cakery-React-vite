@@ -1,0 +1,67 @@
+.hero {
+  background: url('/images/hero.jpg') center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  background: url('/images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+}
+
+/* INTRO SECTION */
+.home-intro {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
