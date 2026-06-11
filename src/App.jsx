@@ -1,6 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Products from "./pages/Products";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -9,7 +13,10 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Add more pages later */}
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
