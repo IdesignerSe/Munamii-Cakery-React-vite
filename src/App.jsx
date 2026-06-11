@@ -1,3 +1,5 @@
+import AppRouter from "./router";
+
 export default function App() {
-  return <h1>Munamii Cakery</h1>;
+  return <AppRouter />;
 }
