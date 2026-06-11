@@ -111,8 +111,8 @@ Assets	                Local images
 
 📂 Project Structure 
 
-´´´text
- 
+```text
+
 src/
 │── components/
 │   ├── Navbar.jsx
@@ -137,7 +137,7 @@ src/
 │── main.jsx
 │── global.css
 
-´´´
+```
 ---
 
 🚀 How to Run the Project :
