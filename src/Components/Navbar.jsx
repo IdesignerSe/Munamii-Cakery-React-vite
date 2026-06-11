@@ -1,11 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import CartSidebar from "./CartSidebar";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
 
-  const toggleMenu = () => setOpen(!open);
-  const closeMenu = () => setOpen(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
+  const openCart = () => {
+    closeMenu();
+    setCartOpen(true);
+  };
+
+  const closeCart = () => setCartOpen(false);
 
   return (
     <>
@@ -29,25 +38,29 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-right">
-          <Link to="/cart" className="cart-icon" onClick={closeMenu}>🛒</Link>
+          {/* Cart Icon */}
+          <span className="cart-icon" onClick={openCart}>🛒</span>
 
-          {/* Hamburger Icon (mobile) */}
+          {/* Hamburger Icon */}
           <div className="hamburger" onClick={toggleMenu}>
-            <div className={open ? "bar bar1 open" : "bar bar1"}></div>
-            <div className={open ? "bar bar2 open" : "bar bar2"}></div>
-            <div className={open ? "bar bar3 open" : "bar bar3"}></div>
+            <div className={menuOpen ? "bar bar1 open" : "bar bar1"}></div>
+            <div className={menuOpen ? "bar bar2 open" : "bar bar2"}></div>
+            <div className={menuOpen ? "bar bar3 open" : "bar bar3"}></div>
           </div>
         </div>
       </nav>
 
-      {/* Slide-in Mobile Menu */}
-      <div className={open ? "mobile-menu open" : "mobile-menu"}>
+      {/* Mobile Menu */}
+      <div className={menuOpen ? "mobile-menu open" : "mobile-menu"}>
         <Link to="/" onClick={closeMenu}>Home</Link>
         <Link to="/products" onClick={closeMenu}>Products</Link>
         <Link to="/about" onClick={closeMenu}>About</Link>
         <Link to="/contact" onClick={closeMenu}>Contact</Link>
-        <Link to="/cart" onClick={closeMenu}>Cart</Link>
+        <span onClick={openCart}>Cart</span>
       </div>
+
+      {/* Cart Sidebar */}
+      <CartSidebar open={cartOpen} onClose={closeCart} />
     </>
   );
 }
