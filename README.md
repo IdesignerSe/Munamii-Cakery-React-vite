@@ -1,16 +1,181 @@
-# React + Vite
+🍰 *** Sweet Delights — Online Bakery Shop ***
+A modern, responsive bakery e‑commerce website built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 *** Overview ***
+Sweet Delights is a fully responsive online bakery shop where users can browse products, filter by category, view detailed product information, and add items to a dynamic shopping cart.
+The project focuses on UI/UX design, React component architecture, and real‑world e‑commerce functionality.
 
-Currently, two official plugins are available:
+This project was developed as part of a school assignment to demonstrate:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend development skills
 
-## React Compiler
+Component‑based architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+State management
 
-## Expanding the ESLint configuration
+Responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+User‑friendly interactions
+
+---
+
+✨ *** Features ***
+
+🛍️ Product Catalog: 
+
+Wedding cakes & cupcakes
+
+Dynamic filtering (All / Cakes / Cupcakes)
+
+Smooth hover animations
+
+Responsive product grid
+
+---
+
+📄 Product Details Page
+Each product includes:
+
+Large hero image
+
+Long description
+
+Weight in grams
+
+Full nutrition table (calories, sugar, fat, carbs, protein)
+
+Price
+
+Add to Cart button
+
+Clean two‑column layout on desktop
+
+Mobile‑friendly layout
+
+---
+
+🛒 Shopping Cart:
+
+Slide‑in cart sidebar
+
+Add / remove items
+
+Increase / decrease quantity
+
+Live total price
+
+Smooth animations
+
+Cart overlay
+
+---
+
+📱 Responsive Navigation:
+
+Desktop navbar
+
+Mobile hamburger menu
+
+Slide‑in mobile menu
+
+Sticky header
+
+---
+
+🎨 Design & Animations :
+
+Soft pastel color palette
+
+Smooth hover effects
+
+Image zoom on hover
+
+Clean typography
+
+Mobile‑first layout
+
+Pastel product details background
+
+---
+
+🧱 Tech Stack :
+
+Category	            Technology
+Frontend	            React (Vite)
+Styling	CSS             (mobile‑first)
+Routing	                React Router
+State Management	    React Context API (Cart)
+Assets	                Local images
+
+---
+
+📂 Project Structure 
+
+´´´Text 
+src/
+│── components/
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   └── CartSidebar.jsx
+│
+│── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetails.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   └── Cart.jsx
+│
+│── context/
+│   └── CartContext.jsx
+│
+│── data/
+│   └── products.js
+│
+│── App.jsx
+│── main.jsx
+│── global.css
+
+´´´
+---
+
+🚀 How to Run the Project :
+
+1. Install dependencies
+
+npm install
+
+2. Start development server
+
+npm run dev
+
+3. Open in browser
+
+http://localhost:5173
+
+---
+
+🧪 Key Learning Outcomes
+
+This project demonstrates:
+
+Building reusable React components
+
+Managing global state with Context API
+
+Creating dynamic routes with React Router
+
+Designing responsive layouts
+
+Implementing real e‑commerce UI patterns
+
+Writing clean, maintainable CSS
+
+Structuring a real‑world frontend project
+
+---
+
+🏁 Conclusion :
+
+Sweet Delights is a polished, real‑world style bakery e‑commerce website built from scratch using React.
+It demonstrates strong frontend development skills, clean UI/UX design, and practical component architecture.
