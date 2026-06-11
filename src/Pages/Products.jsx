@@ -1,6 +1,6 @@
 import { useState } from "react";
-import products from "../data/products";
-import ProductCard from "../components/ProductCard";
+import products from "../data/products.js";
+import ProductCard from "../components/ProductCard.jsx";
 
 export default function Products() {
   const [filter, setFilter] = useState("all");
@@ -9,10 +9,10 @@ export default function Products() {
     filter === "all"
       ? products
       : products.filter((p) =>
-          filter === "wedding"
-            ? p.image.startsWith("wedding")
-            : p.image.startsWith("cupcake")
-        );
+        filter === "wedding"
+          ? p.image.startsWith("wedding")
+          : p.image.startsWith("cupcake")
+      );
 
   return (
     <div className="page products-page">
@@ -47,6 +47,7 @@ export default function Products() {
         {filteredProducts.map((p) => (
           <ProductCard
             key={p.id}
+            id={p.id}
             image={p.image}
             name={p.name}
             price={p.price}
