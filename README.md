@@ -111,7 +111,8 @@ Assets	                Local images
 
 📂 Project Structure 
 
-´´´Text 
+´´´text
+ 
 src/
 │── components/
 │   ├── Navbar.jsx
