@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Munamii-Cakery-React-vite/">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

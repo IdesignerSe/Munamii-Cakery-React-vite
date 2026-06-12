@@ -12,7 +12,7 @@ import ProductDetails from "./pages/ProductDetails";
 export default function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Munamii-Cakery-React-vite/">
         <Navbar />
 
         <Routes>
@@ -21,8 +21,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
-
-          {/* NEW: Product Details Page */}
           <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
       </BrowserRouter>
