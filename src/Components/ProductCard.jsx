@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 export default function ProductCard({ id, image, name, price }) {
+  // Debug logs (keep these until we fix the undefined ID issue)
   console.log("🔥 ProductCard LOADED from:", import.meta.url);
   console.log("🔥 ProductCard received id:", id);
 
   const { addToCart } = useCart();
-  const product = { id, name, price, image };
+
+  const product = {
+    id,
+    name,
+    price,
+    image,
+  };
 
   return (
     <div className="product-card">
@@ -27,7 +34,10 @@ export default function ProductCard({ id, image, name, price }) {
           Add to Cart
         </button>
 
-        <Link to={`/product/${id}`} className="details-btn">
+        <Link
+          to={`/product/${id}`}
+          className="details-btn"
+        >
           View Details
         </Link>
       </div>

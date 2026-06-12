@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="home-page">
       <HeroBanner />
       <HomeIntro />
       <ProductGrid />
       <Footer />
-    </>
+    </div>
   );
 }
