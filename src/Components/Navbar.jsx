@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import CartSidebar from "./CartSidebar";
 
+const base = import.meta.env.BASE_URL;
+
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
@@ -22,7 +25,7 @@ export default function Navbar() {
         <div className="nav-left">
           <Link to="/" onClick={closeMenu}>
             <img
-              src="/images/munamii_logo.png"
+              src={`${base}images/munamii_logo.png`}
               alt="Munamii Logo"
               className="nav-logo"
             />
