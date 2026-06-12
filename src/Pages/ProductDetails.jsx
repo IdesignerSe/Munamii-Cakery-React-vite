@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import products from "../data/products";
 import { useCart } from "../context/CartContext";
 
+const base = import.meta.env.BASE_URL;
+
+
 export default function ProductDetails() {
   const { id } = useParams();
   const { addToCart } = useCart();
@@ -17,7 +20,7 @@ export default function ProductDetails() {
         {/* LEFT COLUMN */}
         <div className="details-left">
           <img
-            src={`/images/${product.image}`}
+            src={`${base}images/${product.image}`}
             alt={product.name}
             className="details-image"
           />
