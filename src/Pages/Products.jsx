@@ -1,6 +1,7 @@
 import { useState } from "react";
 import products from "../data/products.js";
 import ProductCard from "../components/ProductCard.jsx";
+const base = import.meta.env.BASE_URL;
 
 export default function Products() {
   const [filter, setFilter] = useState("all");

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
+const base = import.meta.env.BASE_URL;
+
 export default function ProductCard({ id, image, name, price }) {
-  // Debug logs (keep these until we fix the undefined ID issue)
-  console.log("🔥 ProductCard LOADED from:", import.meta.url);
-  console.log("🔥 ProductCard received id:", id);
 
   const { addToCart } = useCart();
 
@@ -18,7 +17,7 @@ export default function ProductCard({ id, image, name, price }) {
   return (
     <div className="product-card">
       <img
-        src={`/images/${image}`}
+        src={`${base}images/${image}`}
         alt={name}
         className="product-image"
       />
