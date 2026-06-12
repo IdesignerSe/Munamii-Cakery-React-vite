@@ -180,3 +180,5 @@ Structuring a real‑world frontend project
 
 Sweet Delights is a polished, real‑world style bakery e‑commerce website built from scratch using React.
 It demonstrates strong frontend development skills, clean UI/UX design, and practical component architecture.
+
+Thanks for Stopping by!
