@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 export default function ProductCard({ id, image, name, price }) {
-  const { addToCart } = useCart();
+  console.log("🔥 ProductCard LOADED from:", import.meta.url);
+  console.log("🔥 ProductCard received id:", id);
 
+  const { addToCart } = useCart();
   const product = { id, name, price, image };
 
   return (
